@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+ul {
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1100px;
+}

@@ -1,0 +1,14 @@
+<div class="content">
+  <div class="detailshero" *ngIf="hero">
+    <h2 *ngIf="hero.name"> {{hero.name}} details</h2>
+    <div class="hero">
+      <img class="hero-thumb" src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}" alt="{{hero.name}}">
+      <div class="information">
+        <p *ngIf="hero.id"><strong>ID: </strong>{{hero.id}}</p>
+        <p *ngIf="hero.name"><strong>Name: </strong>{{hero.name}}</p>
+        <p *ngIf="hero.description"><strong>Description</strong>{{hero.description}}</p>
+      </div>
+    </div>
+  </div>
+  <a class="back" (click)="goBack()"> Back</a>
+</div>

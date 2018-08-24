@@ -1,0 +1,15 @@
+<div class="content">
+  <h2>
+    List of heroes Marvel Api
+  </h2>
+  <div class="listhero">
+    <ul *ngIf="heroes">
+      <li *ngFor="let hero of heroes.results">
+        <img class="hero-thumb" src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}" alt="{{hero.name}}">
+        <a href="heroes/{{hero.id}}">
+          {{hero.name}}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
