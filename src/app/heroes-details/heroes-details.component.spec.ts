@@ -7,16 +7,16 @@ describe('HeroesDetailsComponent', () => {
   let fixture: ComponentFixture<HeroesDetailsComponent>;
 
   beforeEach(async(() => {
-    // TestBed.configureTestingModule({
-    //   declarations: [ HeroesDetailsComponent ]
-    // })
-    // .compileComponents();
+    TestBed.configureTestingModule({
+      declarations: [ HeroesDetailsComponent ]
+    })
+    .compileComponents();
   }));
 
   beforeEach(() => {
-    // fixture = TestBed.createComponent(HeroesDetailsComponent);
-    // component = fixture.componentInstance;
-    // fixture.detectChanges();
+    fixture = TestBed.createComponent(HeroesDetailsComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
   });
 
   it('should create', () => {

@@ -26,7 +26,6 @@ export class HeroesDetailsComponent implements OnInit {
     this.marvelService.getHero(this.heroid).subscribe(heroresult => {
       this.marvelList = heroresult.data;
       this.marvelList.results.map(hero => this.hero = hero)
-      console.log('marvel', this.hero )
     })
   }
 
